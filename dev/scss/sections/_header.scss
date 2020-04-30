@@ -1,0 +1,14 @@
+#header{
+    div {
+        display: grid;
+
+        img{
+            width: 100%;
+            @include lg{
+                display: grid;
+                max-width: 1025px;
+            }
+        }
+    
+    }   
+}

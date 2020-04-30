@@ -1,0 +1,26 @@
+/* =============
+    Section 5
+============= */
+#section-5{
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: ". section-6-aside ."
+                            "section-6-text section-6-text section-6-text";
+    
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "section-6-aside section-6-text";
+        }
+
+        section {
+            grid-area: section-6-text;
+        }
+        
+        aside {
+            grid-area: section-6-aside;
+        }
+    }
+}

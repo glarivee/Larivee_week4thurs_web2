@@ -1,0 +1,13 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+    img {
+        display: grid;
+        width: 100%;
+
+        @include lg{
+            max-width: 1025px;
+        }
+    }
+}
