@@ -16,8 +16,8 @@
         padding: 50px 0;
     }
 
-    #section-6-content {
-        grid-area: section-6;
+    #section-5-content {
+        grid-area: section-5;
 
         @include lg{
             >div {
@@ -26,10 +26,10 @@
                 grid-template-areas: "img-left text-right";
 
                 #img-right{
-                    grid-area: img-left;
+                    grid-area: "img-left";
                 }
                 #text-left{
-                    grid-area: text-right;
+                    grid-area: "text-right";
                 }
             }
         }

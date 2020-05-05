@@ -554,14 +554,14 @@ textarea {
   @media (min-width: 992px) {
     #section-5 {
       padding: 50px 0; } }
-  #section-5 #section-6-content {
-    grid-area: section-6; }
+  #section-5 #section-5-content {
+    grid-area: section-5; }
     @media (min-width: 992px) {
-      #section-5 #section-6-content > div {
+      #section-5 #section-5-content > div {
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "img-left text-right"; }
-        #section-5 #section-6-content > div #img-right {
-          grid-area: img-left; }
-        #section-5 #section-6-content > div #text-left {
-          grid-area: text-right; } }
+        #section-5 #section-5-content > div #img-right {
+          grid-area: "img-left"; }
+        #section-5 #section-5-content > div #text-left {
+          grid-area: "text-right"; } }
