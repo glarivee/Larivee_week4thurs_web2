@@ -3,14 +3,14 @@
 ============= */
 
 #section-1{ 
-    #section-2-right {
+    #section-1-right {
         display: grid;
         grid-template-columns: 10px auto 10px;
         grid-template-areas: ". section-1-right .";
         padding: 60px 0;
 
         >div{
-            grid-area: section-2-right;
+            grid-area: section-1-right;
         }
 
     }
@@ -18,18 +18,17 @@
     aside {
         background-image: url('../img/image-2.jpg');
         background-size: cover;
-        background-position-x: -70px;
         height: 480px;
         background-repeat: no-repeat;
         
         @include md{
-            height: 420px;
+            height: 500px;
             background-position-x: -180px;
         }
 
         @include lg{
-            height: 740px;
-            background-position-x: -430px;
+            height: 1000px;
+            background-position-x: -100px;
         }
     }
 

@@ -390,38 +390,41 @@ textarea {
   background-image: url("../img/image-1.jpg");
   background-size: cover;
   background-position: center;
-  height: 370px; }
+  height: 500px; }
   @media (min-width: 768px) {
     #header div {
-      height: 510px; } }
+      height: 512px; } }
   @media (min-width: 992px) {
     #header div {
-      height: 680px; } }
+      height: 800px; } }
+  #header div h1 {
+    text-align: left;
+    color: #45838B; }
+
 /* =============
     Section 1
 ============= */
-#section-1 #section-2-right {
+#section-1 #section-1-right {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-1-right .";
   padding: 60px 0; }
-  #section-1 #section-2-right > div {
-    grid-area: section-2-right; }
+  #section-1 #section-1-right > div {
+    grid-area: section-1-right; }
 
 #section-1 aside {
   background-image: url("../img/image-2.jpg");
   background-size: cover;
-  background-position-x: -70px;
   height: 480px;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
     #section-1 aside {
-      height: 420px;
+      height: 500px;
       background-position-x: -180px; } }
   @media (min-width: 992px) {
     #section-1 aside {
-      height: 740px;
-      background-position-x: -430px; } }
+      height: 1000px;
+      background-position-x: -100px; } }
 @media (min-width: 768px) {
   #section-1 {
     display: grid;
@@ -459,10 +462,10 @@ textarea {
   padding: 60px 0; }
   @media (min-width: 768px) {
     #section-2 {
-      height: 525px; } }
+      height: 700px; } }
   @media (min-width: 992px) {
     #section-2 {
-      height: 685px; } }
+      height: 1500px; } }
 /* =============
     Section 3
 ============= */
@@ -471,7 +474,9 @@ textarea {
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-3 .";
   padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  text-align: center;
+  color: #94B6BE; }
   #section-3 div section {
     grid-area: section-4; }
 
