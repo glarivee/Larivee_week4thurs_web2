@@ -25,10 +25,10 @@
                 grid-template-columns: 50% auto;
                 grid-template-areas: "img-left text-right";
 
-                #img-right{
+                section{
                     grid-area: "img-left";
                 }
-                #text-left{
+                aside{
                     grid-area: "text-right";
                 }
             }

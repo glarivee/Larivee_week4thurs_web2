@@ -3,14 +3,15 @@
 ============= */
 
 #section-1{ 
-    #section-1-right {
+    #section-1-text {
         display: grid;
         grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-1-right .";
+        grid-template-areas: ". section-1-text .";
         padding: 60px 0;
+        text-align: right;
 
         >div{
-            grid-area: section-1-right;
+            grid-area: section-1-text ;
         }
 
     }
@@ -27,7 +28,7 @@
         }
 
         @include lg{
-            height: 1000px;
+            height: 2040px ;
             background-position-x: -100px;
         }
     }
@@ -35,13 +36,13 @@
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "section-1-img section-1-right";
+        grid-template-areas: "section-1-img section-1-text";
 
-        #section-2-img{
-            grid-area: section-2-img;
+        #section-1-img{
+            grid-area: section-1-img;
         }
-        #section-2-right{
-            grid-area: section-2-right;
+        #section-1-text{
+            grid-area: section-1-right;
         }
 
     }
@@ -49,10 +50,10 @@
     @include lg{
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "section-1-img section-1-right";
+        grid-template-areas: "section-1-img section-1-text";
 
-        #section-2-right{
-            grid-area: section-2-right;
+        #section-1-text{
+            grid-area: section-1-text;
         }
     }
 

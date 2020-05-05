@@ -4,11 +4,11 @@
 #section-4{  
     div {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas: "section-4";
+        grid-template-columns: 15px auto 10px;
+        grid-template-areas: ". section-4 .";
 
         ul {
-            grid-area: section-5;
+            grid-area: section-4;
             display: grid;
             
             grid-row-gap: 10px;

@@ -398,19 +398,20 @@ textarea {
     #header div {
       height: 800px; } }
   #header div h1 {
-    text-align: left;
+    text-align: start;
     color: #45838B; }
 
 /* =============
     Section 1
 ============= */
-#section-1 #section-1-right {
+#section-1 #section-1-text {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-1-right .";
-  padding: 60px 0; }
-  #section-1 #section-1-right > div {
-    grid-area: section-1-right; }
+  grid-template-areas: ". section-1-text .";
+  padding: 60px 0;
+  text-align: right; }
+  #section-1 #section-1-text > div {
+    grid-area: section-1-text; }
 
 #section-1 aside {
   background-image: url("../img/image-2.jpg");
@@ -423,25 +424,25 @@ textarea {
       background-position-x: -180px; } }
   @media (min-width: 992px) {
     #section-1 aside {
-      height: 1000px;
+      height: 2040px;
       background-position-x: -100px; } }
 @media (min-width: 768px) {
   #section-1 {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section-1-img section-1-right"; }
-    #section-1 #section-2-img {
-      grid-area: section-2-img; }
-    #section-1 #section-2-right {
-      grid-area: section-2-right; } }
+    grid-template-areas: "section-1-img section-1-text"; }
+    #section-1 #section-1-img {
+      grid-area: section-1-img; }
+    #section-1 #section-1-text {
+      grid-area: section-1-right; } }
 
 @media (min-width: 992px) {
   #section-1 {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section-1-img section-1-right"; }
-    #section-1 #section-2-right {
-      grid-area: section-2-right; } }
+    grid-template-areas: "section-1-img section-1-text"; }
+    #section-1 #section-1-text {
+      grid-area: section-1-text; } }
 
 @media (min-width: 768px) {
   #section-1 {
@@ -478,17 +479,17 @@ textarea {
   text-align: center;
   color: #94B6BE; }
   #section-3 div section {
-    grid-area: section-4; }
+    grid-area: section-3; }
 
 /* =============
     Section 4
 ============= */
 #section-4 div {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "section-4"; }
+  grid-template-columns: 15px auto 10px;
+  grid-template-areas: ". section-4 ."; }
   #section-4 div ul {
-    grid-area: section-5;
+    grid-area: section-4;
     display: grid;
     grid-row-gap: 10px;
     grid-column-gap: 10px; }
@@ -561,7 +562,7 @@ textarea {
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "img-left text-right"; }
-        #section-5 #section-5-content > div #img-right {
+        #section-5 #section-5-content > div section {
           grid-area: "img-left"; }
-        #section-5 #section-5-content > div #text-left {
+        #section-5 #section-5-content > div aside {
           grid-area: "text-right"; } }
