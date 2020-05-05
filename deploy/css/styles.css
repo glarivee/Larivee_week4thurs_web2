@@ -383,55 +383,93 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Header
+============= */
 #header div {
-  display: grid; }
-  #header div img {
-    width: 100%; }
-    @media (min-width: 992px) {
-      #header div img {
-        display: grid;
-        max-width: 1025px; } }
+  background-image: url("../img/image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 370px; }
+  @media (min-width: 768px) {
+    #header div {
+      height: 510px; } }
+  @media (min-width: 992px) {
+    #header div {
+      height: 680px; } }
 /* =============
     Section 1
 ============= */
-#section-1 div {
+#section-1 #section-2-right {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-2-text ." ". section-2-image .";
-  grid-gap: 20px; }
+  grid-template-areas: ". section-1-right .";
+  padding: 60px 0; }
+  #section-1 #section-2-right > div {
+    grid-area: section-2-right; }
+
+#section-1 aside {
+  background-image: url("../img/image-2.jpg");
+  background-size: cover;
+  background-position-x: -70px;
+  height: 480px;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    #section-1 aside {
+      height: 420px;
+      background-position-x: -180px; } }
   @media (min-width: 992px) {
-    #section-1 div {
-      display: grid;
-      grid-template-columns: 50% auto;
-      grid-template-areas: "section-2-image section-2-text"; } }
-  @media (min-width: 1200px) {
-    #section-1 div {
-      display: grid;
-      grid-template-columns: 1200px auto;
-      grid-template-areas: "section-2-image section-2-text"; } }
-  #section-1 div section {
-    grid-area: section-2-text; }
-  #section-1 div aside {
-    grid-area: section-2-image; }
-    #section-1 div aside img {
-      width: 100%; }
+    #section-1 aside {
+      height: 740px;
+      background-position-x: -430px; } }
+@media (min-width: 768px) {
+  #section-1 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-1-img section-1-right"; }
+    #section-1 #section-2-img {
+      grid-area: section-2-img; }
+    #section-1 #section-2-right {
+      grid-area: section-2-right; } }
+
+@media (min-width: 992px) {
+  #section-1 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-1-img section-1-right"; }
+    #section-1 #section-2-right {
+      grid-area: section-2-right; } }
+
+@media (min-width: 768px) {
+  #section-1 {
+    padding: 80px 0; } }
+
+@media (min-width: 992px) {
+  #section-1 {
+    padding: 60px 20px; } }
 
 /* =============
     Section 2
 ============= */
-#section-2 img {
-  display: grid;
-  width: 100%; }
+#section-2 {
+  background-image: url("../img/image-3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 510px;
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    #section-2 {
+      height: 525px; } }
   @media (min-width: 992px) {
-    #section-2 img {
-      max-width: 1025px; } }
+    #section-2 {
+      height: 685px; } }
 /* =============
     Section 3
 ============= */
 #section-3 div {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-4 .";
+  grid-template-areas: ". section-3 .";
   padding-top: 45px;
   padding-bottom: 45px; }
   #section-3 div section {
@@ -440,42 +478,85 @@ textarea {
 /* =============
     Section 4
 ============= */
-#section-4 div ul {
+#section-4 div {
   display: grid;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px; }
-  @media (min-width: 768px) {
-    #section-4 div ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
-  @media (min-width: 992px) {
-    #section-4 div ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
-  @media (min-width: 768px) {
+  grid-template-columns: 100%;
+  grid-template-areas: "section-4"; }
+  #section-4 div ul {
+    grid-area: section-5;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    @media (min-width: 768px) {
+      #section-4 div ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+    @media (min-width: 992px) {
+      #section-4 div ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+    #section-4 div ul li {
+      background-size: cover;
+      height: 100%; }
     #section-4 div ul #gallery-1 {
-      grid-area: gallery-1; } }
-  @media (min-width: 768px) {
+      background-image: url("../img/image-4.jpg");
+      background-position-y: -120px;
+      height: 300px;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #section-4 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 710px; } }
+      @media (min-width: 992px) {
+        #section-4 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 710px; } }
     #section-4 div ul #gallery-2 {
-      grid-area: gallery-2; } }
-  @media (min-width: 768px) {
+      background-image: url("../img/image-5.jpg");
+      height: 300px; }
+      @media (min-width: 768px) {
+        #section-4 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 340px; } }
+      @media (min-width: 992px) {
+        #section-4 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 340px; } }
     #section-4 div ul #gallery-3 {
-      grid-area: gallery-3; } }
+      background-image: url("../img/image-6.jpg");
+      height: 300px; }
+      @media (min-width: 768px) {
+        #section-4 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 340px; } }
+      @media (min-width: 992px) {
+        #section-4 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 340px; } }
 /* =============
     Section 5
 ============= */
-#section-5 div {
+#section-5 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: ". section-6-aside ." "section-6-text section-6-text section-6-text"; }
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-5 .";
+  padding: 40px 0; }
+  @media (min-width: 768px) {
+    #section-5 {
+      padding: 50px 0; } }
   @media (min-width: 992px) {
-    #section-5 div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "section-6-aside section-6-text"; } }
-  #section-5 div section {
-    grid-area: section-6-text; }
-  #section-5 div aside {
-    grid-area: section-6-aside; }
+    #section-5 {
+      padding: 50px 0; } }
+  #section-5 #section-6-content {
+    grid-area: section-6; }
+    @media (min-width: 992px) {
+      #section-5 #section-6-content > div {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "img-left text-right"; }
+        #section-5 #section-6-content > div #img-right {
+          grid-area: img-left; }
+        #section-5 #section-6-content > div #text-left {
+          grid-area: text-right; } }

@@ -2,25 +2,36 @@
     Section 5
 ============= */
 #section-5{
-    div{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: ". section-6-aside ."
-                            "section-6-text section-6-text section-6-text";
     
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-5 .";
+    padding: 40px 0;
+
+    @include md{
+        padding: 50px 0;
+    }
+
+    @include lg{
+        padding: 50px 0;
+    }
+
+    #section-6-content {
+        grid-area: section-6;
 
         @include lg{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "section-6-aside section-6-text";
-        }
+            >div {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "img-left text-right";
 
-        section {
-            grid-area: section-6-text;
-        }
-        
-        aside {
-            grid-area: section-6-aside;
+                #img-right{
+                    grid-area: img-left;
+                }
+                #text-left{
+                    grid-area: text-right;
+                }
+            }
         }
     }
 }

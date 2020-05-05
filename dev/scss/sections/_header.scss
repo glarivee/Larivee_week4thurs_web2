@@ -1,14 +1,21 @@
+/* =============
+    Header
+============= */
+
 #header{
     div {
-        display: grid;
+        background-image: url('../img/image-1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 370px;
 
-        img{
-            width: 100%;
-            @include lg{
-                display: grid;
-                max-width: 1025px;
-            }
+        @include md{
+            height: 510px;
+        } 
+
+        @include lg{
+            height: 680px;
         }
-    
+
     }   
 }
