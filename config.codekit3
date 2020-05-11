@@ -19,78 +19,78 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/image-1.jpg": {
-		"ft": 16384,
-		"iS": 66284,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/image-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/image-2.jpg": {
-		"ft": 16384,
-		"iS": 568693,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/image-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/image-3.jpg": {
-		"ft": 16384,
-		"iS": 876654,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/image-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/image-4.jpg": {
-		"ft": 16384,
-		"iS": 1005890,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/image-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/image-5.jpg": {
+	"/deploy/img/coffeepot-pourover.jpg": {
 		"ft": 16384,
 		"iS": 1031304,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/image-5.jpg",
+		"oAP": "/deploy/img/coffeepot-pourover.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/image-6.jpg": {
+	"/deploy/img/espresso-cup.jpg": {
 		"ft": 16384,
 		"iS": 634126,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/image-6.jpg",
+		"oAP": "/deploy/img/espresso-cup.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/image-7.jpg": {
+	"/deploy/img/four-cups.jpg": {
 		"ft": 16384,
 		"iS": 1045715,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/image-7.jpg",
+		"oAP": "/deploy/img/four-cups.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/mug-pourover.jpg": {
+		"ft": 16384,
+		"iS": 876654,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/mug-pourover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/neon-sign.jpg": {
+		"ft": 16384,
+		"iS": 568693,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/neon-sign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/pouring-cup.jpg": {
+		"ft": 16384,
+		"iS": 1005890,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/pouring-cup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/singlecup-blue.jpg": {
+		"ft": 16384,
+		"iS": 66284,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/singlecup-blue.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -3,23 +3,23 @@
 ============= */
 
 #section-1{ 
-    #section-1-text {
+    #section-1-right {
         display: grid;
         grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-1-text .";
+        grid-template-areas: ". section-1-right .";
         padding: 60px 0;
-        text-align: right;
+        color: $turquoise;
 
         >div{
-            grid-area: section-1-text ;
+            grid-area: section-1-right ;
         }
 
     }
 
     aside {
-        background-image: url('../img/image-2.jpg');
+        background-image: url('../img/neon-sign.jpg');
         background-size: cover;
-        height: 480px;
+        background-position-x: -150px;
         background-repeat: no-repeat;
         
         @include md{
@@ -36,12 +36,12 @@
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "section-1-img section-1-text";
+        grid-template-areas: "section-1-img section-1-right";
 
         #section-1-img{
             grid-area: section-1-img;
         }
-        #section-1-text{
+        #section-1-right{
             grid-area: section-1-right;
         }
 
@@ -49,11 +49,11 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section-1-img section-1-text";
+        grid-template-columns: 25% auto;
+        grid-template-areas: "section-1-img section-1-right";
 
         #section-1-text{
-            grid-area: section-1-text;
+            grid-area: section-1-right;
         }
     }
 
